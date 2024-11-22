@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 30px;
+
+   justify-content: space-between;
+.column{
+    justify-content: center;
+}
+   }
+   
+.card-img-top{
+    width: 200px;
+    height: 200px;
+    padding-left: 150px;
+    margin-top: 10px;
+}
