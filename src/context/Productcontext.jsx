@@ -3,15 +3,13 @@ import{createContext, useState} from "react";
 const ProductContext=createContext();
 
 export  function ProductContextProvider({children}){
-    const[selectData,setSelectData]=useState([]);
-    const[product,setproduct]=useState([]);
-    const[cartitem,setCartItem]=useState([]);
-    const[Total,setTotal]=useState(0)
+    const[cartItem, setCartItem]=useState([]);
+
 
 
        
     return<ProductContext.Provider value={
-        {selectData,setSelectData,product,setproduct,cartitem,setCartItem,Total,setTotal}
+        {cartItem, setCartItem}
     } >
         {children}
         </ProductContext.Provider>;

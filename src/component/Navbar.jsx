@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import ProductContext from "../context/Productcontext";
 export default function Navbar() {
-  const{selectData}=useContext(ProductContext)
+  const{cartItem}=useContext(ProductContext)
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -40,7 +40,7 @@ export default function Navbar() {
                   aria-current="page"
                   to="/cart"
                 >
-                {selectData.length}Viewcart
+                Cart {cartItem.length <= 0 ? "" :  "(" + cartItem.length + " items in cart )"} 
                 </Link>
               </li>
             </ul>

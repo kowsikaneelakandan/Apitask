@@ -15,3 +15,17 @@
     padding-left: 150px;
     margin-top: 10px;
 }
+.card-price {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.quantity-field {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.cField {
+    width: 10%;
+    text-align: center;
+}
